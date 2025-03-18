@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --color-Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+  --color-Light-Grayish-Cyan-Background: hsl(180, 52%, 96%);
+  --color-Light-Grayish-Cyan-Filter-Tablets: hsl(180, 31%, 95%);
+  --color-Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+  --color-Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@theme {
+  --color-Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+  --color-Light-Grayish-Cyan-Background: hsl(180, 52%, 96%);
+  --color-Light-Grayish-Cyan-Filter-Tablets: hsl(180, 31%, 95%);
+  --color-Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+  --color-Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+}
+
+.top-background {
+  background-image: url("/src/images/bg-header-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .top-background {
+    background-image: url("/src/images/bg-header-desktop.svg");
+    background-repeat: repeat;
+    background-size: cover;
+  }
+}
