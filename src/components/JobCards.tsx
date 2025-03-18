@@ -25,7 +25,9 @@ const JobCard: React.FC<JobCardProps> = ({ job, addFilter }) => {
           <div className="flex flex-col items-start space-x-4">
             <div className="flex items-center space-x-4 mb-2">
               <div className="flex items-center space-x-2">
-                <h3 className="font-bold mr-4">{job.company}</h3>
+                <h3 className="font-bold mr-4 text-Desaturated-Dark-Cyan">
+                  {job.company}
+                </h3>
                 {job.new && (
                   <div className="flex items-center justify-center bg-Desaturated-Dark-Cyan py-[3px] px-2 rounded-3xl">
                     <h2 className="uppercase text-white text-sm leading-[100%] mt-1 font-bold">

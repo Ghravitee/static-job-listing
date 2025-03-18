@@ -1,6 +1,6 @@
 import { useState } from "react";
 import JobList from "./components/JobList";
-import iconRemove from "./images/icon-remove.svg";
+import iconRemove from "../public/images/icon-remove.svg";
 
 const App = () => {
   const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
