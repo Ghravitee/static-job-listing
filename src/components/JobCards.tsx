@@ -9,7 +9,7 @@ interface JobCardProps {
 const JobCard: React.FC<JobCardProps> = ({ job, addFilter }) => {
   return (
     <div
-      className={`py-8 px-4 rounded-sm myBox relative ${
+      className={`p-8 rounded-sm myBox relative ${
         job.featured ? "border-l-4 border-Desaturated-Dark-Cyan" : ""
       }`}
     >

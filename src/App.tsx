@@ -25,8 +25,8 @@ const App = () => {
 
       {/* Filter Display Section */}
       {selectedFilters.length > 0 && (
-        <div className="px-4 lg:px-0">
-          <div className="bg-white shadow-md p-4 rounded-md flex gap-2 items-center justify-between max-w-[1100px] mx-auto mt-6">
+        <div className="px-4 lg:px-0 -translate-y-14">
+          <div className="bg-white shadow-md px-8 py-6 rounded-md flex gap-2 items-center justify-between max-w-[1100px] mx-auto mt-6">
             <div className="flex flex-wrap gap-4">
               {selectedFilters.map((filter) => (
                 <div
