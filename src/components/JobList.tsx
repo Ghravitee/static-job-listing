@@ -24,7 +24,7 @@ const JobList: React.FC<JobListProps> = ({ selectedFilters, addFilter }) => {
   });
 
   return (
-    <div className="max-w-[1100px] mx-auto pb-10 px-4 lg:px-0 grid gap-y-10">
+    <div className="max-w-[1100px] mx-auto pb-10 px-4 lg:px-0 grid gap-y-10 mt-8">
       {filteredJobs.map((job) => (
         <JobCard key={job.id} job={job} addFilter={addFilter} />
       ))}
